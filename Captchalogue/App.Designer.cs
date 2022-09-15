@@ -29,6 +29,7 @@ namespace Captchalogue
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(App));
             this.alcCode1 = new System.Windows.Forms.TextBox();
             this.alcCode2 = new System.Windows.Forms.TextBox();
             this.alcLabel1 = new System.Windows.Forms.Label();
@@ -193,6 +194,7 @@ namespace Captchalogue
             this.Controls.Add(this.alcLabel1);
             this.Controls.Add(this.alcCode2);
             this.Controls.Add(this.alcCode1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "App";
             this.Text = "Captchalogue";
             this.ResumeLayout(false);
