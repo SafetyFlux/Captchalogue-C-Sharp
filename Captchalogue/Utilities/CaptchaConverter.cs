@@ -38,6 +38,15 @@ namespace Captchalogue.Utilities
             return true;
         }
 
+        // Verify that a digit is valid
+        public static bool DigitIsValid(char digit)
+        {
+            if (Array.IndexOf(digitList, digit) == -1)
+                return false;
+            else
+                return true;
+        }
+
         // Convert a code into a set of holes
         public static bool[,] CodeToHoles(string code)
         {

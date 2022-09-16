@@ -15,84 +15,57 @@ namespace Captchalogue
 {
     public partial class App : Form
     {
-        // Initialize Card objects
-        private Card alcCard1 = new Card();
-        private Card alcCard2 = new Card();
-        private Card mainCard = new Card();
-
-        // Initialize code strings
-        string code1, code2;
-
         public App()
         {
             InitializeComponent();
         }
 
-        private void ValidateCodes()
+        private void App_Load(object sender, EventArgs e)
         {
-            code1 = alcCode1.Text;
-            code2 = alcCode2.Text;
-            if (CaptchaConverter.CodeIsValid(code1))
+            FillMainDigits();
+        }
+
+        private Card mainCard = new Card();
+
+        private void FillMainDigits()
+        {
+            TextBox[] mainCode = new TextBox[8] { mainDigit1, mainDigit2, mainDigit3, mainDigit4,
+                                                mainDigit5, mainDigit6, mainDigit7, mainDigit8 };
+            char[] digits = mainCard.GetCode().ToCharArray();
+            
+            for (int i = 0; i < 8; i++)
             {
-                alcCard1.SetCode(alcCode1.Text);
+                mainCode[i].Text += digits[i];
             }
-            if (CaptchaConverter.CodeIsValid(code2))
+        }
+
+        private void MainDigit_Clicked(object sender, EventArgs e)
+        {
+            if (sender is TextBox digit)
+                digit.Text = "";
+        }
+
+        private void MainDigit_Entered(object sender, EventArgs e)
+        {
+            if (sender is TextBox digit && digit.Text != "")
             {
-                alcCard2.SetCode(alcCode2.Text);
+                TextBox[] mainCode = new TextBox[8] { mainDigit1, mainDigit2, mainDigit3, mainDigit4,
+                                                mainDigit5, mainDigit6, mainDigit7, mainDigit8 };
+                string newCode = "";
+
+                char d = digit.Text.ToCharArray()[0];
+                if (!CaptchaConverter.DigitIsValid(d))
+                    digit.Text = "";
+
+                foreach (TextBox txt in mainCode)
+                {
+                    newCode += txt.Text;
+                }
+
+                if (CaptchaConverter.CodeIsValid(newCode)) {
+                    mainCard.SetCode(newCode);
+                }
             }
-        }
-
-        private void UpdateResult()
-        {
-            resultCode.Text = mainCard.GetCode();
-        }
-
-        // AND (&&) button click
-        private void OperAND_Click(object sender, EventArgs e)
-        {
-            ValidateCodes();
-            Alchemize.OperationAND(alcCard1, alcCard2, mainCard);
-            UpdateResult();
-        }
-
-        // OR (||) button click
-        private void OperOR_Click(object sender, EventArgs e)
-        {
-            ValidateCodes();
-            Alchemize.OperationOR(alcCard1, alcCard2, mainCard);
-            UpdateResult();
-        }
-
-        // XOR (^^) button click
-        private void OperXOR_Click(object sender, EventArgs e)
-        {
-            ValidateCodes();
-            Alchemize.OperationXOR(alcCard1, alcCard2, mainCard);
-            UpdateResult();
-        }
-
-        // NAND (~&) button click
-        private void OperNAND_Click(object sender, EventArgs e)
-        {
-            ValidateCodes();
-            Alchemize.OperationNAND(alcCard1, alcCard2, mainCard);
-            UpdateResult();
-        }
-
-        // NOR (~|) button click
-        private void OperNOR_Click(object sender, EventArgs e)
-        {
-            ValidateCodes();
-            Alchemize.OperationNOR(alcCard1, alcCard2, mainCard);
-            UpdateResult();
-        }
-
-        // XNOR (~^) button click
-        private void OperXNOR_Click(object sender, EventArgs e)
-        {
-            ValidateCodes();
-            Alchemize.OperationXNOR(alcCard1, alcCard2, mainCard);
-            UpdateResult();
         }
     }
 }

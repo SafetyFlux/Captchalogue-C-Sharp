@@ -1,4 +1,5 @@
-﻿
+﻿using System.Windows.Forms;
+
 namespace Captchalogue
 {
     partial class App
@@ -30,207 +31,171 @@ namespace Captchalogue
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(App));
-            this.alcCode1 = new System.Windows.Forms.TextBox();
-            this.alcCode2 = new System.Windows.Forms.TextBox();
-            this.alcLabel1 = new System.Windows.Forms.Label();
-            this.alcLabel2 = new System.Windows.Forms.Label();
-            this.operAND = new System.Windows.Forms.Button();
-            this.operOR = new System.Windows.Forms.Button();
-            this.operXOR = new System.Windows.Forms.Button();
-            this.operNAND = new System.Windows.Forms.Button();
-            this.operXNOR = new System.Windows.Forms.Button();
-            this.operNOR = new System.Windows.Forms.Button();
-            this.resultCode = new System.Windows.Forms.TextBox();
-            this.resultLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mainDigit1 = new System.Windows.Forms.TextBox();
+            this.mainDigit2 = new System.Windows.Forms.TextBox();
+            this.mainDigit3 = new System.Windows.Forms.TextBox();
+            this.mainDigit4 = new System.Windows.Forms.TextBox();
+            this.mainDigit5 = new System.Windows.Forms.TextBox();
+            this.mainDigit6 = new System.Windows.Forms.TextBox();
+            this.mainDigit7 = new System.Windows.Forms.TextBox();
+            this.mainDigit8 = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // alcCode1
+            // pictureBox1
             // 
-            this.alcCode1.BackColor = System.Drawing.Color.White;
-            this.alcCode1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alcCode1.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alcCode1.Location = new System.Drawing.Point(34, 62);
-            this.alcCode1.MaxLength = 8;
-            this.alcCode1.Name = "alcCode1";
-            this.alcCode1.Size = new System.Drawing.Size(205, 38);
-            this.alcCode1.TabIndex = 0;
-            this.alcCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(16, 20);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(394, 502);
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
-            // alcCode2
+            // mainDigit1
             // 
-            this.alcCode2.BackColor = System.Drawing.Color.White;
-            this.alcCode2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alcCode2.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alcCode2.Location = new System.Drawing.Point(299, 62);
-            this.alcCode2.MaxLength = 8;
-            this.alcCode2.Name = "alcCode2";
-            this.alcCode2.Size = new System.Drawing.Size(205, 38);
-            this.alcCode2.TabIndex = 1;
-            this.alcCode2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mainDigit1.BackColor = System.Drawing.Color.White;
+            this.mainDigit1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainDigit1.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainDigit1.Location = new System.Drawing.Point(67, 543);
+            this.mainDigit1.MaxLength = 1;
+            this.mainDigit1.Name = "mainDigit1";
+            this.mainDigit1.Size = new System.Drawing.Size(31, 31);
+            this.mainDigit1.TabIndex = 12;
+            this.mainDigit1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mainDigit1.Click += new System.EventHandler(this.MainDigit_Clicked);
+            this.mainDigit1.TextChanged += new System.EventHandler(this.MainDigit_Entered);
             // 
-            // alcLabel1
+            // mainDigit2
             // 
-            this.alcLabel1.AutoSize = true;
-            this.alcLabel1.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alcLabel1.Location = new System.Drawing.Point(30, 37);
-            this.alcLabel1.Name = "alcLabel1";
-            this.alcLabel1.Size = new System.Drawing.Size(82, 22);
-            this.alcLabel1.TabIndex = 2;
-            this.alcLabel1.Text = "Code 1";
+            this.mainDigit2.BackColor = System.Drawing.Color.White;
+            this.mainDigit2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainDigit2.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainDigit2.Location = new System.Drawing.Point(104, 543);
+            this.mainDigit2.MaxLength = 1;
+            this.mainDigit2.Name = "mainDigit2";
+            this.mainDigit2.Size = new System.Drawing.Size(31, 31);
+            this.mainDigit2.TabIndex = 13;
+            this.mainDigit2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mainDigit2.Click += new System.EventHandler(this.MainDigit_Clicked);
+            this.mainDigit2.TextChanged += new System.EventHandler(this.MainDigit_Entered);
             // 
-            // alcLabel2
+            // mainDigit3
             // 
-            this.alcLabel2.AutoSize = true;
-            this.alcLabel2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alcLabel2.Location = new System.Drawing.Point(295, 37);
-            this.alcLabel2.Name = "alcLabel2";
-            this.alcLabel2.Size = new System.Drawing.Size(82, 22);
-            this.alcLabel2.TabIndex = 3;
-            this.alcLabel2.Text = "Code 2";
+            this.mainDigit3.BackColor = System.Drawing.Color.White;
+            this.mainDigit3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainDigit3.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainDigit3.Location = new System.Drawing.Point(141, 543);
+            this.mainDigit3.MaxLength = 1;
+            this.mainDigit3.Name = "mainDigit3";
+            this.mainDigit3.Size = new System.Drawing.Size(31, 31);
+            this.mainDigit3.TabIndex = 14;
+            this.mainDigit3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mainDigit3.Click += new System.EventHandler(this.MainDigit_Clicked);
+            this.mainDigit3.TextChanged += new System.EventHandler(this.MainDigit_Entered);
             // 
-            // operAND
+            // mainDigit4
             // 
-            this.operAND.BackColor = System.Drawing.Color.Aqua;
-            this.operAND.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.operAND.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operAND.Location = new System.Drawing.Point(30, 124);
-            this.operAND.Name = "operAND";
-            this.operAND.Size = new System.Drawing.Size(67, 43);
-            this.operAND.TabIndex = 4;
-            this.operAND.Text = "&&&&";
-            this.operAND.UseVisualStyleBackColor = false;
-            this.operAND.Click += new System.EventHandler(this.OperAND_Click);
+            this.mainDigit4.BackColor = System.Drawing.Color.White;
+            this.mainDigit4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainDigit4.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainDigit4.Location = new System.Drawing.Point(178, 543);
+            this.mainDigit4.MaxLength = 1;
+            this.mainDigit4.Name = "mainDigit4";
+            this.mainDigit4.Size = new System.Drawing.Size(31, 31);
+            this.mainDigit4.TabIndex = 15;
+            this.mainDigit4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mainDigit4.Click += new System.EventHandler(this.MainDigit_Clicked);
+            this.mainDigit4.TextChanged += new System.EventHandler(this.MainDigit_Entered);
             // 
-            // operOR
+            // mainDigit5
             // 
-            this.operOR.BackColor = System.Drawing.Color.Aqua;
-            this.operOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.operOR.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operOR.Location = new System.Drawing.Point(113, 124);
-            this.operOR.Name = "operOR";
-            this.operOR.Size = new System.Drawing.Size(67, 43);
-            this.operOR.TabIndex = 5;
-            this.operOR.Text = "||";
-            this.operOR.UseVisualStyleBackColor = false;
-            this.operOR.Click += new System.EventHandler(this.OperOR_Click);
+            this.mainDigit5.BackColor = System.Drawing.Color.White;
+            this.mainDigit5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainDigit5.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainDigit5.Location = new System.Drawing.Point(215, 543);
+            this.mainDigit5.MaxLength = 1;
+            this.mainDigit5.Name = "mainDigit5";
+            this.mainDigit5.Size = new System.Drawing.Size(31, 31);
+            this.mainDigit5.TabIndex = 16;
+            this.mainDigit5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mainDigit5.Click += new System.EventHandler(this.MainDigit_Clicked);
+            this.mainDigit5.TextChanged += new System.EventHandler(this.MainDigit_Entered);
             // 
-            // operXOR
+            // mainDigit6
             // 
-            this.operXOR.BackColor = System.Drawing.Color.Aqua;
-            this.operXOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.operXOR.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operXOR.Location = new System.Drawing.Point(194, 124);
-            this.operXOR.Name = "operXOR";
-            this.operXOR.Size = new System.Drawing.Size(67, 43);
-            this.operXOR.TabIndex = 6;
-            this.operXOR.Text = "^^";
-            this.operXOR.UseVisualStyleBackColor = false;
-            this.operXOR.Click += new System.EventHandler(this.OperXOR_Click);
+            this.mainDigit6.BackColor = System.Drawing.Color.White;
+            this.mainDigit6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainDigit6.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainDigit6.Location = new System.Drawing.Point(252, 543);
+            this.mainDigit6.MaxLength = 1;
+            this.mainDigit6.Name = "mainDigit6";
+            this.mainDigit6.Size = new System.Drawing.Size(31, 31);
+            this.mainDigit6.TabIndex = 17;
+            this.mainDigit6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mainDigit6.Click += new System.EventHandler(this.MainDigit_Clicked);
+            this.mainDigit6.TextChanged += new System.EventHandler(this.MainDigit_Entered);
             // 
-            // operNAND
+            // mainDigit7
             // 
-            this.operNAND.BackColor = System.Drawing.Color.Aqua;
-            this.operNAND.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.operNAND.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operNAND.Location = new System.Drawing.Point(277, 124);
-            this.operNAND.Name = "operNAND";
-            this.operNAND.Size = new System.Drawing.Size(67, 43);
-            this.operNAND.TabIndex = 7;
-            this.operNAND.Text = "~&&";
-            this.operNAND.UseVisualStyleBackColor = false;
-            this.operNAND.Click += new System.EventHandler(this.OperNAND_Click);
+            this.mainDigit7.BackColor = System.Drawing.Color.White;
+            this.mainDigit7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainDigit7.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainDigit7.Location = new System.Drawing.Point(289, 543);
+            this.mainDigit7.MaxLength = 1;
+            this.mainDigit7.Name = "mainDigit7";
+            this.mainDigit7.Size = new System.Drawing.Size(31, 31);
+            this.mainDigit7.TabIndex = 18;
+            this.mainDigit7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mainDigit7.Click += new System.EventHandler(this.MainDigit_Clicked);
+            this.mainDigit7.TextChanged += new System.EventHandler(this.MainDigit_Entered);
             // 
-            // operXNOR
+            // mainDigit8
             // 
-            this.operXNOR.BackColor = System.Drawing.Color.Aqua;
-            this.operXNOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.operXNOR.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operXNOR.Location = new System.Drawing.Point(443, 124);
-            this.operXNOR.Name = "operXNOR";
-            this.operXNOR.Size = new System.Drawing.Size(67, 43);
-            this.operXNOR.TabIndex = 9;
-            this.operXNOR.Text = "~^";
-            this.operXNOR.UseVisualStyleBackColor = false;
-            this.operXNOR.Click += new System.EventHandler(this.OperXNOR_Click);
-            // 
-            // operNOR
-            // 
-            this.operNOR.BackColor = System.Drawing.Color.Aqua;
-            this.operNOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.operNOR.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operNOR.Location = new System.Drawing.Point(360, 124);
-            this.operNOR.Name = "operNOR";
-            this.operNOR.Size = new System.Drawing.Size(67, 43);
-            this.operNOR.TabIndex = 8;
-            this.operNOR.Text = "~|";
-            this.operNOR.UseVisualStyleBackColor = false;
-            this.operNOR.Click += new System.EventHandler(this.OperNOR_Click);
-            // 
-            // resultCode
-            // 
-            this.resultCode.BackColor = System.Drawing.Color.White;
-            this.resultCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.resultCode.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultCode.Location = new System.Drawing.Point(232, 196);
-            this.resultCode.MaxLength = 8;
-            this.resultCode.Name = "resultCode";
-            this.resultCode.ReadOnly = true;
-            this.resultCode.Size = new System.Drawing.Size(183, 38);
-            this.resultCode.TabIndex = 10;
-            this.resultCode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // resultLabel
-            // 
-            this.resultLabel.AutoSize = true;
-            this.resultLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultLabel.Location = new System.Drawing.Point(124, 204);
-            this.resultLabel.Name = "resultLabel";
-            this.resultLabel.Size = new System.Drawing.Size(82, 22);
-            this.resultLabel.TabIndex = 11;
-            this.resultLabel.Text = "Result";
+            this.mainDigit8.BackColor = System.Drawing.Color.White;
+            this.mainDigit8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainDigit8.Font = new System.Drawing.Font("Courier New", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mainDigit8.Location = new System.Drawing.Point(326, 543);
+            this.mainDigit8.MaxLength = 1;
+            this.mainDigit8.Name = "mainDigit8";
+            this.mainDigit8.Size = new System.Drawing.Size(31, 31);
+            this.mainDigit8.TabIndex = 19;
+            this.mainDigit8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.mainDigit8.Click += new System.EventHandler(this.MainDigit_Clicked);
+            this.mainDigit8.TextChanged += new System.EventHandler(this.MainDigit_Entered);
             // 
             // App
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Snow;
-            this.ClientSize = new System.Drawing.Size(538, 270);
-            this.Controls.Add(this.resultLabel);
-            this.Controls.Add(this.resultCode);
-            this.Controls.Add(this.operXNOR);
-            this.Controls.Add(this.operNOR);
-            this.Controls.Add(this.operNAND);
-            this.Controls.Add(this.operXOR);
-            this.Controls.Add(this.operOR);
-            this.Controls.Add(this.operAND);
-            this.Controls.Add(this.alcLabel2);
-            this.Controls.Add(this.alcLabel1);
-            this.Controls.Add(this.alcCode2);
-            this.Controls.Add(this.alcCode1);
+            this.ClientSize = new System.Drawing.Size(425, 594);
+            this.Controls.Add(this.mainDigit8);
+            this.Controls.Add(this.mainDigit7);
+            this.Controls.Add(this.mainDigit6);
+            this.Controls.Add(this.mainDigit5);
+            this.Controls.Add(this.mainDigit4);
+            this.Controls.Add(this.mainDigit3);
+            this.Controls.Add(this.mainDigit2);
+            this.Controls.Add(this.mainDigit1);
+            this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(556, 317);
-            this.MinimumSize = new System.Drawing.Size(556, 317);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "App";
             this.Text = "Captchalogue";
+            this.Load += new System.EventHandler(this.App_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox alcCode1;
-        private System.Windows.Forms.TextBox alcCode2;
-        private System.Windows.Forms.Label alcLabel1;
-        private System.Windows.Forms.Label alcLabel2;
-        private System.Windows.Forms.Button operAND;
-        private System.Windows.Forms.Button operOR;
-        private System.Windows.Forms.Button operXOR;
-        private System.Windows.Forms.Button operNAND;
-        private System.Windows.Forms.Button operXNOR;
-        private System.Windows.Forms.Button operNOR;
-        private System.Windows.Forms.TextBox resultCode;
-        private System.Windows.Forms.Label resultLabel;
+        private PictureBox pictureBox1;
+        private TextBox mainDigit1, mainDigit2, mainDigit3, mainDigit4, 
+                        mainDigit5, mainDigit6, mainDigit7, mainDigit8;
     }
 }
 
