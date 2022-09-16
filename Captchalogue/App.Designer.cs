@@ -46,21 +46,25 @@ namespace Captchalogue
             // 
             // alcCode1
             // 
+            this.alcCode1.BackColor = System.Drawing.Color.White;
+            this.alcCode1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.alcCode1.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alcCode1.Location = new System.Drawing.Point(34, 62);
             this.alcCode1.MaxLength = 8;
             this.alcCode1.Name = "alcCode1";
-            this.alcCode1.Size = new System.Drawing.Size(183, 38);
+            this.alcCode1.Size = new System.Drawing.Size(205, 38);
             this.alcCode1.TabIndex = 0;
             this.alcCode1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // alcCode2
             // 
+            this.alcCode2.BackColor = System.Drawing.Color.White;
+            this.alcCode2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.alcCode2.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alcCode2.Location = new System.Drawing.Point(283, 62);
+            this.alcCode2.Location = new System.Drawing.Point(299, 62);
             this.alcCode2.MaxLength = 8;
             this.alcCode2.Name = "alcCode2";
-            this.alcCode2.Size = new System.Drawing.Size(183, 38);
+            this.alcCode2.Size = new System.Drawing.Size(205, 38);
             this.alcCode2.TabIndex = 1;
             this.alcCode2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -78,7 +82,7 @@ namespace Captchalogue
             // 
             this.alcLabel2.AutoSize = true;
             this.alcLabel2.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.alcLabel2.Location = new System.Drawing.Point(279, 37);
+            this.alcLabel2.Location = new System.Drawing.Point(295, 37);
             this.alcLabel2.Name = "alcLabel2";
             this.alcLabel2.Size = new System.Drawing.Size(82, 22);
             this.alcLabel2.TabIndex = 3;
@@ -87,8 +91,9 @@ namespace Captchalogue
             // operAND
             // 
             this.operAND.BackColor = System.Drawing.Color.Aqua;
+            this.operAND.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.operAND.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operAND.Location = new System.Drawing.Point(34, 124);
+            this.operAND.Location = new System.Drawing.Point(30, 124);
             this.operAND.Name = "operAND";
             this.operAND.Size = new System.Drawing.Size(67, 43);
             this.operAND.TabIndex = 4;
@@ -99,8 +104,9 @@ namespace Captchalogue
             // operOR
             // 
             this.operOR.BackColor = System.Drawing.Color.Aqua;
+            this.operOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.operOR.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operOR.Location = new System.Drawing.Point(107, 124);
+            this.operOR.Location = new System.Drawing.Point(113, 124);
             this.operOR.Name = "operOR";
             this.operOR.Size = new System.Drawing.Size(67, 43);
             this.operOR.TabIndex = 5;
@@ -111,8 +117,9 @@ namespace Captchalogue
             // operXOR
             // 
             this.operXOR.BackColor = System.Drawing.Color.Aqua;
+            this.operXOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.operXOR.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operXOR.Location = new System.Drawing.Point(180, 124);
+            this.operXOR.Location = new System.Drawing.Point(194, 124);
             this.operXOR.Name = "operXOR";
             this.operXOR.Size = new System.Drawing.Size(67, 43);
             this.operXOR.TabIndex = 6;
@@ -123,8 +130,9 @@ namespace Captchalogue
             // operNAND
             // 
             this.operNAND.BackColor = System.Drawing.Color.Aqua;
+            this.operNAND.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.operNAND.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operNAND.Location = new System.Drawing.Point(253, 124);
+            this.operNAND.Location = new System.Drawing.Point(277, 124);
             this.operNAND.Name = "operNAND";
             this.operNAND.Size = new System.Drawing.Size(67, 43);
             this.operNAND.TabIndex = 7;
@@ -135,8 +143,9 @@ namespace Captchalogue
             // operXNOR
             // 
             this.operXNOR.BackColor = System.Drawing.Color.Aqua;
+            this.operXNOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.operXNOR.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operXNOR.Location = new System.Drawing.Point(399, 124);
+            this.operXNOR.Location = new System.Drawing.Point(443, 124);
             this.operXNOR.Name = "operXNOR";
             this.operXNOR.Size = new System.Drawing.Size(67, 43);
             this.operXNOR.TabIndex = 9;
@@ -147,8 +156,9 @@ namespace Captchalogue
             // operNOR
             // 
             this.operNOR.BackColor = System.Drawing.Color.Aqua;
+            this.operNOR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.operNOR.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operNOR.Location = new System.Drawing.Point(326, 124);
+            this.operNOR.Location = new System.Drawing.Point(360, 124);
             this.operNOR.Name = "operNOR";
             this.operNOR.Size = new System.Drawing.Size(67, 43);
             this.operNOR.TabIndex = 8;
@@ -158,8 +168,10 @@ namespace Captchalogue
             // 
             // resultCode
             // 
+            this.resultCode.BackColor = System.Drawing.Color.White;
+            this.resultCode.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.resultCode.Font = new System.Drawing.Font("Courier New", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultCode.Location = new System.Drawing.Point(210, 195);
+            this.resultCode.Location = new System.Drawing.Point(232, 196);
             this.resultCode.MaxLength = 8;
             this.resultCode.Name = "resultCode";
             this.resultCode.ReadOnly = true;
@@ -171,7 +183,7 @@ namespace Captchalogue
             // 
             this.resultLabel.AutoSize = true;
             this.resultLabel.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resultLabel.Location = new System.Drawing.Point(122, 204);
+            this.resultLabel.Location = new System.Drawing.Point(124, 204);
             this.resultLabel.Name = "resultLabel";
             this.resultLabel.Size = new System.Drawing.Size(82, 22);
             this.resultLabel.TabIndex = 11;
@@ -181,7 +193,8 @@ namespace Captchalogue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(498, 270);
+            this.BackColor = System.Drawing.Color.Snow;
+            this.ClientSize = new System.Drawing.Size(538, 270);
             this.Controls.Add(this.resultLabel);
             this.Controls.Add(this.resultCode);
             this.Controls.Add(this.operXNOR);
@@ -195,6 +208,8 @@ namespace Captchalogue
             this.Controls.Add(this.alcCode2);
             this.Controls.Add(this.alcCode1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximumSize = new System.Drawing.Size(556, 317);
+            this.MinimumSize = new System.Drawing.Size(556, 317);
             this.Name = "App";
             this.Text = "Captchalogue";
             this.ResumeLayout(false);
